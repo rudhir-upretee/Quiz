@@ -1,0 +1,26 @@
+/******************************************************************************
+
+Data structure storing monotonic sequence problems
+
+1. In a given list, window size is s. Window moves from left to right. At every
+   step calculate the maximum item in array.
+   
+   arr: [3,5,8,4,6,9,5,2]
+   ans: [8,8,8,9,9,9]
+
+2. Given array of temperatures for n days. Find how long you have to wait at 
+   each day i before seeing temperature > current temp at i.
+   
+   arr: [73,74,75,71,69,72,76,73]
+   ans: [1,1,4,2,1,1,0,0]
+*******************************************************************************/
+#include <stdio.h>
+
+sdfsdfsd
+
+int main()
+{
+    printf("Hello World");
+
+    return 0;
+}
