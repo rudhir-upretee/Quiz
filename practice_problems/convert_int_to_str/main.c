@@ -25,8 +25,9 @@ void convertHexToString(uint32 hex, char str[])
 {
    int i = 0;
    uint32 n;
+   int cnt = 0;
    
-   while(hex != 0)
+   while(cnt < (sizeof(uint32)*2))
    {
        n = (hex & 0xF0000000) >> 28;
        
@@ -41,6 +42,7 @@ void convertHexToString(uint32 hex, char str[])
        
        hex <<= 4;
        i++;
+       cnt++;
    }
    str[i] = 0;
    
@@ -67,6 +69,8 @@ int main()
     
     convertHexToString(0x1A2B3C4D, str);
     printf("Hex 0x1A2B3C4D = \"%s\"\n", str);
+    convertHexToString(0x1A000000, str);
+    printf("Hex 0x1A000000 = \"%s\"\n", str);
 
     convertDecToString(12345678, str);
     printf("Dec 12345678 = \"%s\"\n", str);
